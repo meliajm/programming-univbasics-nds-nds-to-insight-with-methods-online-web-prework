@@ -60,4 +60,4 @@ def directors_totals(nds)
   new_hash
 end
 
-end
+
