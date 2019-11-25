@@ -60,4 +60,6 @@ def directors_totals(nds)
   new_hash
 end
 
-
+def gross_for_director(director_data)
+  directors_totals(director_data).values.sum 
+end
