@@ -50,10 +50,12 @@
 
 def directors_totals(nds)
   new_hash = {}
+  
   new_index = 0 
+  new_hash[nds[row_index][:name]] = 0
   while new_index < nds[:movies].length do 
-      new_hash[nds[:name]] += (nds[:movies][new_index][:worldwide_gross])
-      new_index += 1
+    new_hash[nds[:name]] += (nds[:movies][new_index][:worldwide_gross])
+    new_index += 1
   end
   # puts nds
   # puts new_hash
